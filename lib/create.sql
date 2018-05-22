@@ -1,4 +1,4 @@
-CREATE TABLE project (id INTEGER PRIMARY KEY, title TEXT, cateogry TEXT, funding_goal INTEGER, start_date );
+CREATE TABLE project (id INTEGER PRIMARY KEY, title TEXT, cateogry TEXT, funding_goal INTEGER, start_date DATE, end_date DATE);
 
     it "creates a projects table with a start_date field" do
       expect{@db.execute("SELECT start_date FROM projects;")}.to_not raise_exception
